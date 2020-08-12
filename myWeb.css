@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap');
+/*ELemenen utama*/
+* {
+    box-sizing: border-box;
+}
+#content {
+    float: left;
+    width: 75%;
+ }
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/*HEADER*/
+header {
+    display: inline;
+}
+header img {
+    width: 145px;
+}
+.logo {
+    width: 50px;
+    padding-left: 4vw;
+}
+.kotak-navigasi {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+nav {
+    background-image: linear-gradient(to right , #e55039, #d1402b, #be2f1d);
+    padding: 10px 8% 10px 0px;
+    position: sticky;
+    top: 0;
+    text-align: right;
+    display: flex;   
+}
+nav li {
+    padding: 0px 10px 2px 13px;
+    background-color: #3C5381;
+    border:solid white;
+    border-radius: 15px;
+    display: inline;
+    list-style-type: none;
+    margin-right: 10px;
+}
+nav a {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+nav li:hover {
+    text-shadow: 2px 2px black;
+    background-color: black;
+}
+.jumbotron {
+    display: flex;
+    font-size: 20px;
+    height: 400px;
+    background-image: linear-gradient(to right , #e55039, #d1402b, #be2f1d); 
+    text-align: left;
+    color: #f1faee;
+}
+.jumbotron img {
+    object-position: center;
+    object-fit: contain;
+    width: 65%;
+    padding: 0vw 0vw 3vw 6vw;
+}
+.jumbotext {
+    margin-left: -80px;
+    padding: 1.5vw 1.5vw 0 1.5vw;
+    font-size: 4vw;
+    
+}
+.semitext {
+    padding-right: 12vw;
+    margin: -4vw 0vw 0vw -3.5vw;
+    font-size: 1vw;
+}
+
+/*BODY*/
+main {
+    padding: 20px;
+    overflow: auto;
+}
+body {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h2, h3 {
+    color: #e55039;
+    line-height: 1;
+}
+.card { 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 5px 20px 10px 20px;
+    margin-top: 20px;
+}
+.container{
+    width: 90%;
+    display: flex;
+    padding: 1vw 2vw 0vw 1vw;
+    margin: 0vw 2vw 2vw 3vw;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.odd {   
+    flex-direction: row-reverse;
+    
+}
+.even {
+    flex-direction: row;
+}
+.promo {
+    width: 500px;
+    padding: 0vw 2vw 2vw 2vw;
+}
+.promo p {
+    text-align: justify;
+}
+.gambar {
+    width: 200px;
+}
+.odd .gambar{
+    margin-right: 2vw;
+}
+.even .gambar{
+    margin-left: 3vw;
+}
+.online {
+    width: 170px;
+}
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 2vw 4vw;
+}
+.list {
+    width: 260px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.jenis {
+    border: solid black;
+    border-radius: 20px 5px ;
+    margin: 1.5vw 1.5vw 1.5vw 1.5vw;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #3C5381;
+    color: white;
+    text-align: center;
+    padding: 10px;   
+    box-shadow: 6px 6px 2px 0 #e55039;
+}
+#siapaKami {
+    margin-top: 60px;
+    background-image: linear-gradient(to right , #e55039, #d1402b, #be2f1d);
+}
+.aboutContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.aboutContainer p{
+    color: black;
+}
+.box {
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px;
+    margin: 20px;
+    text-align: center;
+}
+.box p:nth-child(3) {
+    font-weight: 700;
+    line-height: 0.2;
+}
+.engineer-image{
+    max-height: 100px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+} 
+.jabatan {
+    font-weight: 400;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 5px 3px;
+    background-color: #3C5381;
+    border:solid white;
+    border-radius: 15px;
+    color: white;
+}
+#hubungi form {
+    font-weight: 700;
+    font-size: 14px;
+    color: #3C5381;
+}
+#hubungi input, textarea {
+    margin: 5px 0 5px 0;
+}
+label {
+    font-size: 1.2em;
+}
+input[type=text] {
+    width: 50%;
+    padding: 5px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+input[type=submit] {
+    width: 80px;
+    background-color: #3C5381;
+    color: white;
+    padding: 5px 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+.profile header {
+    text-align: center;
+}
+footer {
+    font-size: 1.1em;
+    padding: 20px;
+    color: white;
+    background-color: #3C5381;
+    text-align: center;
+    font-weight: bold;
+    line-height: 0.75;
+}
+footer img {
+    margin-top: -2vw;
+    margin-bottom: -1.4vw;
+    width: 180px;
+}
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.profile img {
+    width: 80%;
+    border-radius: 50%;
+    
+}
+.testi .card{
+    margin-top: 4vw;
+    border-radius: 15px 30px;
+    padding: 5px 30px 10px 30px;
+    background-color: whitesmoke;
+}
+.bio {
+    border-radius: 10px 35px;
+    padding: 5px 25px 10px 25px;
+    background-color: whitesmoke;
+} 
+.bio-jenis {
+    border-left: 5px solid #3C5381;
+    font-weight: 700;
+    font-size: 1.1em;
+    padding-left: 5px;
+}
+.bio-data {
+    padding-left: 2.5vw;
+    overflow: auto;
+}
+.rating-box {
+    margin-top: 1vw;
+    border-radius: 10px 35px;
+    padding-bottom: 1vw; 
+    background-color: whites;
+}
+.star-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+.star-box div {
+    padding: 8px 6px 0px 6px;
+    width: 40px;
+    border-radius: 10px;
+}
+.star-box p {
+    text-align: center;
+    line-height: 0.3;
+}
+.star-box img {
+    width: 20px;
+    height: 20px;
+    margin-left: 14%;
+}
+.star-box div:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+
+/* CSS MEDIA */
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    .profile img {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .jumbotext{
+        margin-left: -80px;
+        padding: 50% 1.5vw 0 1.5vw;
+        font-size: 4vw;
+    }
+    .semitext {
+        padding-right: 12vw;
+        margin: -4vw 0vw 0vw -25%;
+        font-size: 1vw;
+    }
+    nav li {
+        padding: 2px 5px 2px 7px;
+        background-color: transparent;
+        border: 0px solid white;
+        border-radius: 0px;
+        display: inline-flex;
+        list-style-type: none;
+        margin-right:  0px;
+    }
+    nav a {
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 10px;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+    }
+    nav li:hover {
+        text-shadow: 2px 2px black;
+        background-color: black;
+    } 
+}
+
+@media screen and (max-width: 450px){
+    .jumbotron{
+        height: 250px;
+    }
+    .semitext {
+        padding-right: 12vw;
+        margin: -4vw 0vw 0vw -50%;
+        font-size: 1vw;
+    }
+    nav li {
+        padding: 3px;       
+        background-color: transparent;
+        border:transparent;
+        border-radius: 5px;
+        display: inline-flex;
+        list-style-type: none;
+        margin-right: 2px;
+    }
+    nav a {
+        text-align: center;
+        letter-spacing: 0px;
+        font-size: 0.1em;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+    }
+}
